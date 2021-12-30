@@ -1,0 +1,35 @@
+.phone-icon {
+    width: rem(14px);
+    height: rem(14px);
+    display: flex;
+}
+
+.surfboard-icon, .desktop-icon, .car-icon {
+    width: rem(35px);
+    height: rem(35px);
+
+}
+
+.material-icon, .surf-icon, .person-icon {
+    width: rem(70px);
+    height: rem(70px);
+    transform: translateY(rem(30px));
+
+    @include phones {
+    transform: translate(rem(35px), rem(30px));
+    }
+}
+
+.vk-icon, .fb-icon, .in-icon, .tw-icon {
+    width: rem(22px);
+    height: rem(22px);
+}
+
+.phone-icon--color--white {
+    fill: white;
+}
+
+.close-icon {
+    width: rem(20px);
+    height: rem(20px);
+}

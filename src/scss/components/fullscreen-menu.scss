@@ -1,0 +1,52 @@
+.fullscreen-menu {
+    display: none;
+    @include tablets {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: #313131;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 1000;
+    }
+}
+
+.active {
+    @include tablets {
+        display: flex;
+    }
+
+}
+
+.fullscreen-menu__close {
+    @include tablets {
+        position: absolute;
+        top: rem(38px);
+        right: rem(38px);
+    }
+
+    @include phones {
+        top: rem(35px);
+        right: rem(15px);
+    }
+}
+
+.menu--vertical {
+    @include tablets {
+        display: flex;
+        font-size: rem(36px);
+        color: #fff;
+        width: 30%;
+        height: 50%; 
+    }
+
+    @include phones {
+        width: 44%;
+    }
+}

@@ -1,0 +1,143 @@
+
+.product__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // padding: 0 0 0 13%;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.product__col {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.products {
+    display: flex;
+    position: relative;
+
+}
+
+.product__parameters {
+    margin-bottom: rem(47px);
+}
+
+.image-wrapper {
+    background: url("../images/slider/board-before-bg.png") center top 65% / contain no-repeat;
+    @include tablets {
+        width: 45%;
+    }
+
+    @include phones {
+        width: 57%;
+    }
+}
+
+.product__title {
+    font-size: rem(36px);
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: rem(22px);
+
+    @include tablets {
+        font-size: rem(30px);
+        line-height: rem(36px);
+        margin-bottom: rem(18px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+    }
+}
+
+.product__text {
+    line-height: rem(21.6px);
+    margin-bottom: rem(22px);
+    padding-right: rem(21px);
+
+    @include tablets {
+        padding: 0 10%;
+        text-align: center;
+        line-height: 1.1;
+        font-size: rem(18px);
+        margin-bottom: rem(32px);
+    }
+
+    @include phones {
+        line-height: 1.4;
+        margin-bottom: rem(17px);
+
+    }
+}
+
+.product__values {
+    width: rem(370px);
+    @include tablets {
+        margin-bottom: rem(15px);
+        text-align: end;
+    }
+}
+
+.second-col {
+    margin-left: rem(55px);
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.second-value {
+    font-weight: bold;
+    color: #000;
+}
+
+.product__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+    }
+}
+
+.cost-text {
+    white-space: nowrap;
+    font-size: rem(60px);
+    color: #151515;
+
+    @include tablets {
+        padding-right: rem(50px);
+    }
+}
+
+.product__btn {
+    background: $yellow;
+    color: #000;
+    margin-right: rem(36px);
+
+    @include tablets {
+        margin-right: 0;
+    }
+
+    @include phones {
+        font-size: rem(18px);
+    }
+
+    &::hover {
+        background-color: $yellow2;
+    }
+}

@@ -1,0 +1,28 @@
+.parameters-block {
+    width: rem(91px);
+    height: rem(91px);
+    background: url('../images/slider/arrows.png') center top 30% / cover no-repeat;
+    background-color: #3A587E;
+    border-radius: rem(4px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.parameters__pic {
+    width: rem(40px);
+    height: rem(40px);
+    margin: rem(17px) 0 rem(7px) 0;
+}
+
+.parameter__text {
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-weight: bold;
+}

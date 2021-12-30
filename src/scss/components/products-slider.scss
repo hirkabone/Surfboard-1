@@ -1,0 +1,11 @@
+.products-slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}

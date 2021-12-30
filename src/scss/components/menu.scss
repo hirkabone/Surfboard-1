@@ -1,0 +1,36 @@
+.menu {
+margin: 0 rem(30px);
+padding-top: rem(5px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: rem(24px);
+    margin-bottom: rem(10px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 3.333333rem;
+
+        &:last-child {
+            margin-right: 3.333333rem;
+        }
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+}

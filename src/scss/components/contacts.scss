@@ -1,0 +1,25 @@
+.contacts {
+    font-size: rem(21px);
+    font-style: normal;
+    position: relative;
+
+    @include phones {
+        margin-bottom: rem(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__phone-number {
+    @include phones {
+        margin: 0;
+        display: flex;
+    }
+}
+
+.contacts__place {
+    @include phones {
+        margin-bottom: rem(11px);
+    }
+}

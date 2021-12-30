@@ -1,0 +1,11 @@
+.socials {
+    display: flex;
+    align-content: center;
+}
+
+
+.social__item {
+    margin-left: rem(14px);
+    width: rem(20px);
+    height: rem(20px);
+}

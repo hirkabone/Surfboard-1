@@ -1,0 +1,86 @@
+.hero {
+    background: url("../images/bg/surfers.png") center bottom 25% / cover no-repeat;
+    background-color: #1968B1;
+    height: 100%;
+    min-height: rem(650px);
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+
+    @include tablets {
+        background: url("../images/bg/bg-tablet-surfers.png") center top 90px / 100% 100% no-repeat;
+        background-color: #1968B1;  
+    }
+
+    @include phones {
+        background-size: cover;
+    }
+}
+
+.hero__title-section {
+    width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 0.87;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include phones {
+        flex: .88;
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(45px) 0;
+}
+
+.hero__main-title {
+    font-size: rem(48px);
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+
+    @include tablets {
+        max-width: rem(700px);
+        font-size: rem(51px);
+        margin-bottom: rem(8px);
+
+    }
+
+    @include phones {
+        font-size: rem(45px);
+        line-height: .9;
+    }
+}
+
+.hero__title-desc {
+    font-size: rem(21px);
+    margin-bottom: rem(40px);
+    font-weight: normal;
+
+    @include tablets {
+        margin-bottom: rem(42px);
+        font-size: rem(24px);
+    }
+
+    @include phones {
+        font-size: rem(20px);
+        margin-bottom: rem(48px);
+    }
+}

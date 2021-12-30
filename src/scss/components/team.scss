@@ -1,0 +1,98 @@
+.team {
+    display: flex;
+    justify-content: space-between;
+
+    &--version--desktop {
+        .team__content {
+            position: absolute;
+            top: 100%;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &--version--mobile {
+        display: none;
+
+        @include tablets {
+            display: flex;
+            padding: 0 10%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team__item {
+            flex-direction: column;
+            margin-bottom: rem(16px);
+            flex: initial;
+            margin-right: 0;
+        }
+
+        .team__content-block {
+            height: rem(400px);
+        }
+    }
+}
+
+.team__item {
+    flex: 1;
+    text-align: center;
+    margin-right: rem(20px);
+    max-width: rem(225px);
+    position: relative;
+}
+
+.team__member {
+    height: rem(288px);
+    margin-bottom: rem(14px);
+}
+
+.team__title {
+    display: inline-flex;
+    align-items: center;
+    color: #292929;
+    justify-content: center;
+    font-size: rem(21px);
+    font-weight: bold;
+    line-height: rem(25px);
+    border: none;
+    background: transparent;
+    margin-bottom: rem(20px);
+    cursor: pointer;
+
+    &::after {
+        content: url("../images/team/triagle.jpg");
+        width: rem(9px);
+        height: rem(9px);
+        padding: 0 0 rem(18px) rem(5px);
+    }
+}
+
+.active {
+    .team__title::after {
+        content: url("../images/team/triagle.jpg");
+        transform: rotate(180deg);
+        padding: 0 rem(5px) rem(18px) 0;
+    }
+}
+
+.team__content {
+    color: #666;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+}
+
+.team__content-block {
+    height: rem(85px);
+    padding-bottom: rem(5px);
+}
+
+.content__title {
+    color: #000;
+}
+
+.content__text {
+    max-height: rem(44px);
+}

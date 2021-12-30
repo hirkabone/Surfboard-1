@@ -1,0 +1,28 @@
+.product-slider__arrow {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+
+    &--direction--prev {
+        left: 0;
+
+        @include tablets {
+            transform: translate(rem(163px), rem(-174px));
+        }
+        @include phones {
+            transform: translate(0, rem(-182px));
+        }
+    }
+
+    &--direction--next {
+        right: 0;
+
+        @include tablets {
+            transform: translate(rem(-123px), rem(-175px));
+        }
+        @include phones {
+            transform: translate(0, rem(-182px));
+        }
+    }
+}
