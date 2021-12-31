@@ -5,6 +5,7 @@ const menuItems = sideMenu.find(".fixed-menu__item");
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
+const isTablet = mobileDetect.tablet();
 
 let inScroll = false;
 
@@ -129,7 +130,7 @@ $("[data-scroll-to]").click(e => {
 });
 
 
-if (isMobile) {
+if (isMobile, isTablet) {
 
 // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 $("body").swipe({
