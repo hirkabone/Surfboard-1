@@ -75,6 +75,7 @@
         height: rem(152px);
         resize: none;
         margin-bottom: rem(18px);
+        overflow: hidden;
 
         @include tablets {
             height: rem(84px);
