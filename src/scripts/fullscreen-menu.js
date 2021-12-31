@@ -12,3 +12,12 @@ closingBtn.addEventListener('click', function() {
     menu.classList.remove("active");
     body.classList.remove("hidden");
 });
+
+menu.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (e.target.classList.contains("menu__link")) {
+        menu.classList.remove("active");
+        body.classList.remove("hidden"); 
+    }
+});

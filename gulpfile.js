@@ -40,6 +40,11 @@ task("copy:jpg",() => {
     .pipe(dest(`${DIST_PATH}/images`))
 });
 
+task("copy:video",() => {
+    return src(`${SRC_PATH}/video/*.*`)
+    .pipe(dest(`${DIST_PATH}/video`))
+});
+
 task("copy:svg",() => {
     return src(`${SRC_PATH}/images/**/*.svg`)
     .pipe(dest(`${DIST_PATH}/images`))
@@ -51,7 +56,7 @@ task("styles", () => {
         .pipe(concat("main.scss"))
         .pipe(sassGlob())
         .pipe(sass().on("error", sass.logError))
-        .pipe(px2rem())
+        // .pipe(px2rem())
         .pipe(
             gulpif(
                 env === 'dev',
@@ -79,7 +84,7 @@ task("scripts", () => {
 });
 
 task("icons", () => {
-    return src(`${SRC_PATH}/images/**/*.svg`)
+    return src(`${SRC_PATH}/images/icons/*.svg`)
         .pipe(svgo({
             plugins: [
                 {
@@ -118,7 +123,7 @@ task(
     "default",
     series(
         "clean", 
-        parallel("copy:html", "copy:png", "copy:jpg", "copy:svg", "styles", "scripts", "icons"),
+        parallel("copy:html", "copy:png", "copy:jpg", "copy:video", "copy:svg", "styles", "scripts", "icons"),
         parallel("watch", 'server')
     )
 );
@@ -127,6 +132,6 @@ task(
     "build",
     series(
         "clean", 
-        parallel("copy:html","copy:png", "copy:jpg", "copy:svg", "styles", "scripts", "icons")
+        parallel("copy:html","copy:png", "copy:jpg", "copy:video", "copy:svg", "styles", "scripts", "icons")
     )
 );

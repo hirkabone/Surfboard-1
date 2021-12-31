@@ -20,7 +20,7 @@
               <ul class="menu__list">
                 <li class="menu__item"> <a href="#" data-scroll-to="benefits" class="menu__link">О нас </a> </li>
                 <li class="menu__item"> <a href="#" data-scroll-to="products" class="menu__link">Серфборды</a> </li>
-                <li class="menu__item"> <a href="#" data-scroll-to="team"class="menu__link">Команда</a> </li>
+                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
                 <li class="menu__item"> <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a> </li>
                 <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
                 <li class="menu__item"> <a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a> </li>
@@ -165,7 +165,7 @@
                           <ul class="dropdown__list">
                             <li class="dropdown__item">
                               <svg class="dropdown__item-icon">
-                                <use xlink:href="./images/sprite.svg#left-right-arrows"></use>
+                                <use xlink:href="./images/sprite.svg#left-right--arrows-icon"></use>
                               </svg>
                               <div class="dropdown__item-text">Длина доски</div>
                               <div class="dropdown__item-value">от 2.5 м</div>
@@ -221,7 +221,7 @@
                     </table>
                     <div class="product__cost">
                       <div class="cost-text">7000 ₽</div>
-                      <a href="#" class="btn product__btn">Заказать</a>
+                      <a href="#" class="btn product__btn" data-scroll-to="order">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -241,7 +241,7 @@
                           <ul class="dropdown__list">
                             <li class="dropdown__item">
                               <svg class="dropdown__item-icon">
-                                <use xlink:href="./images/sprite.svg#left-right-arrows"></use>
+                                <use xlink:href="./images/sprite.svg#left-right--arrows-icon"></use>
                               </svg>
                               <div class="dropdown__item-text">Длина доски</div>
                               <div class="dropdown__item-value">от 1.5 м</div>
@@ -297,7 +297,7 @@
                     </table>
                     <div class="product__cost">
                       <div class="cost-text">12000 ₽</div>
-                      <a href="#" class="btn product__btn">Заказать</a>
+                      <a href="#" class="btn product__btn" data-scroll-to="order">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -697,18 +697,18 @@
   <div class="fullscreen-menu">
     <a href="#" class="fullscreen-menu__close">
       <svg class="close-icon">
-        <use xlink:href="./images/sprite.svg#close"></use>
+        <use xlink:href="./images/sprite.svg#close-icon"></use>
       </svg>
     </a>
     <nav class="menu menu--vertical">
       <ul class="menu__list vertical">
-        <li class="menu__item"> <a href="#" class="menu__link">О нас </a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Серфобры</a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Меню</a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-        <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="benefits" class="menu__link">О нас </a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="products" class="menu__link">Серфборы</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a> </li>
+        <li class="menu__item"> <a href="#" data-scroll-to="map" class="menu__link">Контакты</a> </li>
       </ul>
     </nav>
   </div>
@@ -733,8 +733,9 @@
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="map" class="fixed-menu__link"> </a></li>
     </ul>
   </nav>
-  <!-- <script src="./scripts/main.js"></script> -->
-  <script src="./scripts/jquery-3.6.0.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./scripts/main.js"></script>
+  <!-- <script src="./scripts/jquery-3.6.0.min.js"></script>
   <script src="./scripts/jquery.fancybox.min.js"></script>
   <script src="./scripts/jquery.bxslider.min.js"></script>
   <script src="./scripts/modal.js"></script>
@@ -747,7 +748,6 @@
   <script src="./scripts/jquery.touchSwipe.min.js"></script>
   <script src="./scripts/mobile-detect.min.js"></script>
   <script src="./scripts/ops.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="./scripts/map.js"></script>
+  <script src="./scripts/map.js"></script> -->
 </body>
 </html>

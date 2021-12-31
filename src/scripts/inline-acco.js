@@ -15,10 +15,13 @@ const mesureWidth = item => {
 
     if (isTablet) {
         reqItemWidth = screenWidth - titlesWidth;
-    } else {
-        reqItemWidth = 500;
-    } if (isMobile) {
+    } 
+    if (isMobile) {
         reqItemWidth = screenWidth - titlesBlock.width();
+    }
+    
+    if (!isTablet && !isMobile) {
+        reqItemWidth = 500;
     }
     return {
         container: reqItemWidth,

@@ -7,7 +7,7 @@
 .surfboard-icon, .desktop-icon, .car-icon {
     width: rem(35px);
     height: rem(35px);
-
+    fill: currentColor;
 }
 
 .material-icon, .surf-icon, .person-icon {
@@ -32,4 +32,12 @@
 .close-icon {
     width: rem(20px);
     height: rem(20px);
+}
+
+.dropdown__item-icon {
+    fill: black;
+}
+
+.close-icon {
+    fill: currentColor;
 }
