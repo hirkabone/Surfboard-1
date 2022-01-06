@@ -26,7 +26,7 @@
     z-index: 2;
 
     @include tablets {
-        margin: rem(198px) 0 0 rem(28px);
+        margin: rem(198px) 0 0 rem(10px);
     }
 }
 
@@ -63,6 +63,9 @@
     width: 100px;
     display: flex;
     z-index: 5;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
 
     @include phones {
         width: 90px;
@@ -70,6 +73,7 @@
 }
 
 .products-menu__image {
+    position: absolute;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -79,19 +83,16 @@
 .products-menu__text {
     z-index: 2;
     font-weight: bold;
-    position: absolute;
-    bottom: rem(242px);
-    left: rem(-186px);
     color: #fff;
     transform: rotate(-90deg);
     font-size: rem(48px);
     height: rem(60px);
-    width: rem(466px);
+    width: rem(750px);
+    line-height: rem(58px);
+    flex: none;
 
     @include phones {
         font-size: rem(40px);
-        line-height: rem(48px);
-        left: -162px;
     }
 }
 

@@ -23,6 +23,11 @@
 .vk-icon, .fb-icon, .in-icon, .tw-icon {
     width: rem(22px);
     height: rem(22px);
+    fill: #B3B3B3;
+
+    &:hover {
+        fill: #292929;
+    }
 }
 
 .phone-icon--color--white {
@@ -40,4 +45,19 @@
 
 .close-icon {
     fill: currentColor;
+}
+
+.title-icon {
+    width: 9px;
+    height: 9px;
+    padding-bottom: 2px;
+}
+
+.icon-rotated {
+    .title-icon {
+        width: 9px;
+        height: 9px;
+        transform: rotate(180deg);
+        transition: transform .5s;
+    }
 }
